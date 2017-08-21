@@ -12,6 +12,12 @@
     }
 }
 
+@media (max-width: 799px) {
+    .main-container {
+        padding: 1% 0px;
+    }
+}
+
 .card-container {
     margin: 1% 0%;
 }
