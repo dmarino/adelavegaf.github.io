@@ -21,7 +21,7 @@
     </div>
     <div class="collapse" id="navbarToggleExternalContent">
         <div id="main-navbar" class="bg-dark p-4">
-            <ul class="nav nav-pills flex-column">
+            <ul class="nav nav-pills flex-column text-center">
                 <li class="nav-item lead">
                     <a class="nav-link" href="#about">
                         <i class="fa fa-id-card" aria-hidden="true"></i>
@@ -50,7 +50,8 @@
         </div>
     </div>
 </nav>
-<div class="container col-xs-12 col-md-6">
+<div id="card-holder" class="container col-xs-12 col-md-6">
+    <!-- General Information -->
     <div class="card card-container text-center">
         <div class="card-body">
             <span class="glyphicon glyphicon-home"></span>
@@ -68,115 +69,7 @@
             </a>
         </div>
     </div>
-
-    <!-- About Me -->
-    <div class="card card-container">
-        <a id="about" class="anchor"></a>
-        <div class="card-body">
-            <h4 class="card-title">About me</h4>
-            <ul class="list-group list-group-flush">
-                <li class="list-group-item">
-                    <p class="card-text">
-                        I'm a 21 year old male that was born and raised in Colombia. Since a young age I have been
-                        tinkering
-                        around with technology. When I'm not working, one of my favorite hobbies is to perform outdoor
-                        activities such as hiking and running. I also enjoy travelling!
-                    </p>
-                </li>
-            </ul>
-        </div>
-    </div>
-
-    <!-- Education -->
-    <div class="card card-container">
-        <a id="education" class="anchor"></a>
-        <div class="card-body">
-            <h4 class="card-title">Education</h4>
-            <ul class="list-group list-group-flush">
-                <li class="list-group-item">
-                    <div>
-                        <img src="resources/uniandes.png" width="128" class="rounded mx-auto d-block">
-                        <p class="lead text-center">Majoring in Systems and Computing Engineering</p>
-                        <p class="card-text">Attended from August 2014 to March 2019. Currently hold a GPA of 4.64 out
-                            of 5.00.</p>
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </div>
-
-    <!-- Experience -->
-    <div class="card card-container">
-        <a id="experience" class="anchor"></a>
-        <div class="card-body">
-            <h4 class="card-title">Experience</h4>
-            <ul class="list-group list-group-flush">
-                <li class="list-group-item">
-                    <div>
-                        <img src="resources/google.png" width="128" class="rounded mx-auto d-block">
-                        <p class="lead text-center">Software Engineer Tools and Infrastructure Intern</p>
-                        <p class="lead text-center">February 2017 - May 2017</p>
-                        <p class="card-text">Added a feature to a widely used, internal, web-based IDE that allowed
-                            developers to lease multiple Android Emulators that were running in the cloud.
-                        </p>
-                        <p class="card-text">
-                            The developers could install apps and interact with the emulators without ever leaving the
-                            browser. As a result, users that were on low-end machines could now do Android development
-                            seamlessly since no local process is launched.
-                        </p>
-                    </div>
-                </li>
-                <li class="list-group-item">
-                    <div>
-                        <img src="resources/uniandes.png" width="128" class="rounded mx-auto d-block">
-                        <p class="lead text-center">Research Assistant</p>
-                        <p class="lead text-center">January 2015 - December 2017</p>
-                        <p class="card-text">
-                            Actively assisted a distributed computing research group (COMIT) in their research projects.
-                            My contributions to the group have been:
-                        </p>
-                        <p class="card-text">
-                            Implemented a task scheduler, in a three-person team, for the Linux Kernel that focuses on
-                            managing processes that run on a Desktop Grid. The scheduling policy guarantees that the
-                            increase in execution times of user tasks remains below a predefined threshold while
-                            volunteer computing jobs run in parallel.
-                        </p>
-                        <p class="card-text">
-                            Enabled distributed computing capabilities to an image-processing software that was
-                            developed by the university in collaboration with NASA. A Colombian government agency
-                            (IDEAM) uses the software. The implementation was made using Celery in Python.
-                        </p>
-                        <p class="card-text">
-                            Developed a user simulation tool in Java to load RAM and CPU to a given percent for a given
-                            time. The tool is 100% accurate loading RAM and 95% accurate loading CPU.
-                        </p>
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </div>
-
-    <!-- Projects -->
-    <div class="card card-container">
-        <a id="projects" class="anchor"></a>
-        <div class="card-body">
-            <h4 class="card-title">Projects</h4>
-            <ul class="list-group list-group-flush">
-                <li class="list-group-item">
-                    <p class="card-text">
-                        Led the development of an Android application where users can use their smartphones as security
-                        cameras. Features include live streaming to multiple devices and motion detection of an area.
-                    </p>
-                </li>
-                <li class="list-group-item">
-                    <p class="card-text">
-                        Designed and implemented an online chat game that can be played through multiple platforms. The
-                        web application is mobile friendly and cross-browser compatible.
-                    </p>
-                </li>
-            </ul>
-        </div>
-    </div>
+    <!-- More Information Will Be Added Programmatically Here -->
 </div>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
@@ -187,6 +80,7 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"
         integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1"
         crossorigin="anonymous"></script>
-<script src="scripts/script.js"></script>
+<script src="scripts/model.js"></script>
+<script src="scripts/controller.js"></script>
 </body>
 </html>
