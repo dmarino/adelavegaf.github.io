@@ -7,16 +7,9 @@
     position: relative;
 }
 
-@media (min-width: 800px) {
-    .main-container {
-        padding: 1% 10%;
-    }
-}
-
-@media (max-width: 799px) {
-    .main-container {
-        padding: 1% 0px;
-    }
+.container {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
 }
 
 .card-container {
