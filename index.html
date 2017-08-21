@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Antonio de la Vega | Portfolio</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css"
+          integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="web-background">
+<div class="pos-f-t">
+    <nav id="main-navbar" class="navbar sticky-top navbar-dark bg-dark">
+        <div>
+            <button class="navbar-toggler no-border" type="button" data-toggle="collapse"
+                    data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <h1 class="navbar-brand text-white">Antonio de la Vega</h1>
+        </div>
+    </nav>
+    <div class="collapse" id="navbarToggleExternalContent">
+        <div class="bg-dark p-4">
+            <ul class="nav flex-column">
+                <li class="nav-item lead">
+                    <a class="text-muted" href="#about">
+                        <i class="fa fa-id-card" aria-hidden="true"></i>
+                        About Me
+                    </a>
+                </li>
+                <li class="nav-item lead">
+                    <a class="text-muted" href="#education">
+                        <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+                        Education
+                    </a>
+                </li>
+                <li class="nav-item lead">
+                    <a class="text-muted" href="#experience">
+                        <i class="fa fa-gavel" aria-hidden="true"></i>
+                        Experience
+                    </a>
+                </li>
+                <li class="nav-item lead">
+                    <a class="text-muted" href="#projects">
+                        <i class="fa fa-gamepad" aria-hidden="true"></i>
+                        Projects
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="container main-container" data-spy="scroll" data-target="#main-navbar" data-offset="0">
+    <div class="card card-container text-center">
+        <div class="card-body">
+            <span class="glyphicon glyphicon-home"></span>
+            <img src="resources/profile_pic.jpg" height="128" width="128" class="rounded mx-auto d-block">
+            <hr class="my-4">
+            <span class="lead text-center">Welcome to my portfolio!</span>
+            <p class="card-text">Here you'll discover my interests and what I have been working on as a Software
+                Engineer in formation.</p>
+        </div>
+    </div>
+
+    <!-- About Me -->
+    <div id="about" class="card card-container">
+        <div class="card-body">
+            <h4 class="card-title">About me</h4>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                    <p class="card-text">
+                        I'm a 21 year old male that was born and raised in Colombia. Since a young age I have been
+                        tinkering
+                        around with technology. When I'm not working, one of my favorite hobbies is to perform outdoor
+                        activities such as hiking and running. I also enjoy travelling!
+                    </p>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Education -->
+    <div id="education" class="card card-container">
+        <div class="card-body">
+            <h4 class="card-title">Education</h4>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                    <div>
+                        <img src="resources/uniandes.png" width="128" class="rounded mx-auto d-block">
+                        <p class="lead text-center">Majoring in Systems and Computing Engineering</p>
+                        <p class="card-text">Attended from August 2014 to March 2019. Currently hold a GPA of 4.64 out
+                            of 5.00.</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Experience -->
+    <div id="experience" class="card card-container">
+        <div class="card-body">
+            <h4 class="card-title">Experience</h4>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                    <div>
+                        <img src="resources/google.png" width="128" class="rounded mx-auto d-block">
+                        <p class="lead text-center">Software Engineer Tools and Infrastructure Intern</p>
+                        <p class="lead text-center">February 2017 - May 2017</p>
+                        <p class="card-text">Added a feature to a widely used, internal, web-based IDE that allowed
+                            developers to lease multiple Android Emulators that were running in the cloud.
+                        </p>
+                        <p class="card-text">
+                            The developers could install apps and interact with the emulators without ever leaving the
+                            browser. As a result, users that were on low-end machines could now do Android development
+                            seamlessly since no local process is launched.
+                        </p>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <div>
+                        <img src="resources/uniandes.png" width="128" class="rounded mx-auto d-block">
+                        <p class="lead text-center">Research Assistant</p>
+                        <p class="lead text-center">January 2015 - December 2017</p>
+                        <p class="card-text">
+                            Actively assisted a distributed computing research group (COMIT) in their research projects.
+                            My contributions to the group have been:
+                        </p>
+                        <p class="card-text">
+                            Implemented a task scheduler, in a three-person team, for the Linux Kernel that focuses on
+                            managing processes that run on a Desktop Grid. The scheduling policy guarantees that the
+                            increase in execution times of user tasks remains below a predefined threshold while
+                            volunteer computing jobs run in parallel.
+                        </p>
+                        <p class="card-text">
+                            Enabled distributed computing capabilities to an image-processing software that was
+                            developed by the university in collaboration with NASA. A Colombian government agency
+                            (IDEAM) uses the software. The implementation was made using Celery in Python.
+                        </p>
+                        <p class="card-text">
+                            Developed a user simulation tool in Java to load RAM and CPU to a given percent for a given
+                            time. The tool is 100% accurate loading RAM and 95% accurate loading CPU.
+                        </p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Projects -->
+    <div id="projects" class="card card-container">
+        <div class="card-body">
+            <h4 class="card-title">Projects</h4>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                    <p class="card-text">
+                        Led the development of an Android application where users can use their smartphones as security
+                        cameras. Features include live streaming to multiple devices and motion detection of an area.
+                    </p>
+                </li>
+                <li class="list-group-item">
+                    <p class="card-text">
+                        Designed and implemented an online chat game that can be played through multiple platforms. The
+                        web application is mobile friendly and cross-browser compatible.
+                    </p>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"
+        integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
+        crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"
+        integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1"
+        crossorigin="anonymous"></script>
+</body>
+</html>
