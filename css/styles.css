@@ -37,3 +37,11 @@ a.anchor {
     top: -75px;
     visibility: hidden;
 }
+
+.github-link {
+    color: #000000;
+}
+
+.linkedin-link {
+    color: #0077b5;
+}
