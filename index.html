@@ -9,41 +9,39 @@
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
 </head>
-<body class="web-background">
-<div class="pos-f-t">
-    <nav id="main-navbar" class="navbar sticky-top navbar-dark bg-dark">
-        <div>
-            <button class="navbar-toggler no-border" type="button" data-toggle="collapse"
-                    data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <h1 class="navbar-brand text-white">Antonio de la Vega</h1>
-        </div>
-    </nav>
+<body class="web-background" data-spy="scroll" data-target="#main-navbar">
+<nav class="navbar sticky-top navbar-dark bg-dark flex-column">
+    <div>
+        <button class="navbar-toggler no-border" type="button" data-toggle="collapse"
+                data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <h1 class="navbar-brand text-white">Antonio de la Vega</h1>
+    </div>
     <div class="collapse" id="navbarToggleExternalContent">
-        <div class="bg-dark p-4">
-            <ul class="nav flex-column">
+        <div id="main-navbar" class="bg-dark p-4">
+            <ul class="nav nav-pills flex-column">
                 <li class="nav-item lead">
-                    <a class="text-muted" href="#about">
+                    <a class="nav-link" href="#about">
                         <i class="fa fa-id-card" aria-hidden="true"></i>
                         About Me
                     </a>
                 </li>
                 <li class="nav-item lead">
-                    <a class="text-muted" href="#education">
+                    <a class="nav-link" href="#education">
                         <i class="fa fa-graduation-cap" aria-hidden="true"></i>
                         Education
                     </a>
                 </li>
                 <li class="nav-item lead">
-                    <a class="text-muted" href="#experience">
+                    <a class="nav-link" href="#experience">
                         <i class="fa fa-gavel" aria-hidden="true"></i>
                         Experience
                     </a>
                 </li>
                 <li class="nav-item lead">
-                    <a class="text-muted" href="#projects">
+                    <a class="nav-link" href="#projects">
                         <i class="fa fa-gamepad" aria-hidden="true"></i>
                         Projects
                     </a>
@@ -51,8 +49,8 @@
             </ul>
         </div>
     </div>
-</div>
-<div class="container main-container" data-spy="scroll" data-target="#main-navbar" data-offset="0">
+</nav>
+<div class="container main-container">
     <div class="card card-container text-center">
         <div class="card-body">
             <span class="glyphicon glyphicon-home"></span>
@@ -65,7 +63,8 @@
     </div>
 
     <!-- About Me -->
-    <div id="about" class="card card-container">
+    <div class="card card-container">
+        <a id="about" class="anchor"></a>
         <div class="card-body">
             <h4 class="card-title">About me</h4>
             <ul class="list-group list-group-flush">
@@ -82,7 +81,8 @@
     </div>
 
     <!-- Education -->
-    <div id="education" class="card card-container">
+    <div class="card card-container">
+        <a id="education" class="anchor"></a>
         <div class="card-body">
             <h4 class="card-title">Education</h4>
             <ul class="list-group list-group-flush">
@@ -99,7 +99,8 @@
     </div>
 
     <!-- Experience -->
-    <div id="experience" class="card card-container">
+    <div class="card card-container">
+        <a id="experience" class="anchor"></a>
         <div class="card-body">
             <h4 class="card-title">Experience</h4>
             <ul class="list-group list-group-flush">
@@ -149,7 +150,8 @@
     </div>
 
     <!-- Projects -->
-    <div id="projects" class="card card-container">
+    <div class="card card-container">
+        <a id="projects" class="anchor"></a>
         <div class="card-body">
             <h4 class="card-title">Projects</h4>
             <ul class="list-group list-group-flush">
@@ -178,5 +180,6 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"
         integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1"
         crossorigin="anonymous"></script>
+<script src="scripts/script.js"></script>
 </body>
 </html>

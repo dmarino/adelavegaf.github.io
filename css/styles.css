@@ -4,6 +4,7 @@
 
 .web-background {
     background-color: #e9ecef;
+    position: relative;
 }
 
 @media (min-width: 800px) {
@@ -28,4 +29,11 @@
 
 .fill-width {
     flex: 1;
+}
+
+a.anchor {
+    display: block;
+    position: relative;
+    top: -75px;
+    visibility: hidden;
 }
