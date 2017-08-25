@@ -3,6 +3,7 @@ var data =
         {
             "title": "About Me",
             "anchor-name": "about",
+            "icon": "fa-id-card",
             "sections":
                 [
                     {
@@ -22,6 +23,7 @@ var data =
         {
             "title": "Education",
             "anchor-name": "education",
+            "icon": "fa-graduation-cap",
             "sections":
                 [
                     {
@@ -42,6 +44,7 @@ var data =
         {
             "title": "Experience",
             "anchor-name": "experience",
+            "icon": "fa-gavel",
             "sections":
                 [
                     {
@@ -91,6 +94,7 @@ var data =
         {
             "title": "Projects",
             "anchor-name": "projects",
+            "icon": "fa-gamepad",
             "sections":
                 [
                     {
