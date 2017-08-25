@@ -1,4 +1,9 @@
-(function () {
+/* JSHint global variables */
+/*global data*/
+/*global CardWidget*/
+/*global NavWidget*/
+
+$(function () {
     "use strict";
 
     // Add Navigation information from data.
@@ -9,8 +14,8 @@
     // Add Portfolio information from data.
     var cardHolder = document.getElementById("card-holder");
 
-    for (var i = 0; i < data.length; i++) {
-        var card = new CardWidget(data[i]);
+    data.forEach(function (element) {
+        var card = new CardWidget(element);
         cardHolder.appendChild(card);
-    }
-})();
+    });
+});

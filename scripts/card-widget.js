@@ -50,39 +50,38 @@ function CardWidget(cardData) {
         }
 
         var subtitles = section["section-subtitle"];
-        for (var i = 0; i < subtitles.length; i++) {
+        subtitles.forEach(function (element) {
             var subtitle = document.createElement("p");
             subtitle.className = "lead text-center";
-            subtitle.appendChild(document.createTextNode(subtitles[i]));
+            subtitle.appendChild(document.createTextNode(element));
             sectionDiv.appendChild(subtitle);
-        }
+        });
 
-        var paragraphs = section["text"];
-        for (i = 0; i < paragraphs.length; i++) {
+        var paragraphs = section.text;
+        paragraphs.forEach(function (element) {
             var paragraph = document.createElement("p");
             paragraph.className = "card-text";
-            paragraph.appendChild(document.createTextNode(paragraphs[i]));
+            paragraph.appendChild(document.createTextNode(element));
             sectionDiv.appendChild(paragraph);
-        }
+        });
 
         var bottomLinkSection = document.createElement("div");
         bottomLinkSection.className = "text-center";
         sectionDiv.appendChild(bottomLinkSection);
 
         var bottomLinks = section["bottom-link"];
-
-        for (i = 0; i < bottomLinks.length; i++) {
+        bottomLinks.forEach(function (element) {
             var anchor = document.createElement("a");
-            anchor.className = "icon " + bottomLinks[i]["icon-class"];
-            anchor.setAttribute("href", bottomLinks[i]["link"]);
+            anchor.className = "icon " + element["icon-class"];
+            anchor.setAttribute("href", element.link);
             anchor.setAttribute("target", "_blank");
 
             var icon = document.createElement("i");
-            icon.className = "fa fa-2x " + bottomLinks[i]["icon"];
+            icon.className = "fa fa-2x " + element.icon;
             anchor.appendChild(icon);
 
             bottomLinkSection.appendChild(anchor);
-        }
+        });
 
         return sectionElement;
     }
@@ -102,18 +101,19 @@ function CardWidget(cardData) {
 
         var cardTitle = document.createElement("h4");
         cardTitle.className = "card-title";
-        cardTitle.appendChild(document.createTextNode(cardData["title"]));
+        cardTitle.appendChild(document.createTextNode(cardData.title));
         cardBody.appendChild(cardTitle);
 
         var cardSections = document.createElement("ul");
         cardSections.className = "list-group list-group-flush";
         cardBody.appendChild(cardSections);
 
-        var sections = cardData["sections"];
-        for (var i = 0; i < sections.length; i++) {
-            var section = constructCardSection(sections[i]);
+        var sections = cardData.sections;
+        sections.forEach(function (element) {
+            var section = constructCardSection(element);
             cardSections.appendChild(section);
-        }
+        });
+
         return card;
     }
 
