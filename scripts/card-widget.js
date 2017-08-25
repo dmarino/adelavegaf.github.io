@@ -12,6 +12,7 @@
  * |                          Subtitle                          |
  * |                          Subtitle                          |
  * |Paragraph                                                   |
+ * |                       link link link                       |
  * +------------------------------------------------------------+
  * |card-section                                                |
  * |                        +----------+                        |
@@ -21,6 +22,7 @@
  * |                                                            |
  * |Paragraph                                                   |
  * |Paragraph                                                   |
+ * |                            link                            |
  * +------------------------------------------------------------+
  *
  * @param cardData, data from which the information that would
@@ -29,6 +31,7 @@
  */
 function CardWidget(cardData) {
     "use strict";
+
     function constructCardSection(section) {
         var sectionElement = document.createElement("li");
         sectionElement.className = "list-group-item";
@@ -55,11 +58,30 @@ function CardWidget(cardData) {
         }
 
         var paragraphs = section["text"];
-        for (var i = 0; i < paragraphs.length; i++) {
+        for (i = 0; i < paragraphs.length; i++) {
             var paragraph = document.createElement("p");
             paragraph.className = "card-text";
             paragraph.appendChild(document.createTextNode(paragraphs[i]));
             sectionDiv.appendChild(paragraph);
+        }
+
+        var bottomLinkSection = document.createElement("div");
+        bottomLinkSection.className = "text-center";
+        sectionDiv.appendChild(bottomLinkSection);
+
+        var bottomLinks = section["bottom-link"];
+
+        for (i = 0; i < bottomLinks.length; i++) {
+            var anchor = document.createElement("a");
+            anchor.className = "icon " + bottomLinks[i]["icon-class"];
+            anchor.setAttribute("href", bottomLinks[i]["link"]);
+            anchor.setAttribute("target", "_blank");
+
+            var icon = document.createElement("i");
+            icon.className = "fa fa-2x " + bottomLinks[i]["icon"];
+            anchor.appendChild(icon);
+
+            bottomLinkSection.appendChild(anchor);
         }
 
         return sectionElement;
@@ -94,5 +116,6 @@ function CardWidget(cardData) {
         }
         return card;
     }
+
     return constructCard(cardData);
 }

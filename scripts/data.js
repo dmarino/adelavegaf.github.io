@@ -1,5 +1,45 @@
+"use strict";
+
 var data =
     [
+        {
+            "title": "",
+            "anchor-name": "",
+            "icon": "",
+            "sections":
+                [
+                    {
+                        "section-image": "resources/profile_pic.jpg",
+                        "section-title": "welcome",
+                        "section-subtitle":
+                            [
+                                "",
+                                "Welcome to my portfolio!"
+                            ],
+                        "text": [],
+                        "bottom-link": []
+                    },
+                    {
+                        "section-image": "",
+                        "section-title": "social-links",
+                        "section-subtitle": [],
+                        "text": [],
+                        "bottom-link":
+                            [
+                                {
+                                    "icon": "fa-github",
+                                    "icon-class": "github-link",
+                                    "link": "https://github.com/adelavegaf"
+                                },
+                                {
+                                    "icon": "fa-linkedin-square",
+                                    "icon-class": "linkedin-link",
+                                    "link": "https://www.linkedin.com/in/antonio-de-la-vega"
+                                }
+                            ]
+                    }
+                ]
+        },
         {
             "title": "About Me",
             "anchor-name": "about",
@@ -16,7 +56,8 @@ var data =
                                 " age I have been tinkering around with technology. When I'm not working, one" +
                                 " of my favorite hobbies is to perform outdoor activities such as hiking and" +
                                 " running. I also enjoy travelling!"
-                            ]
+                            ],
+                        "bottom-link": []
                     }
                 ]
         },
@@ -37,7 +78,8 @@ var data =
                         "text":
                             [
                                 "Currently hold a GPA of 4.64 out of 5.00."
-                            ]
+                            ],
+                        "bottom-link": []
                     }
                 ]
         },
@@ -62,7 +104,8 @@ var data =
                                 "The developers could install apps and interact with the emulators without ever" +
                                 " leaving the browser. As a result, users that were on low-end machines could now" +
                                 " do Android development seamlessly since no local process is launched."
-                            ]
+                            ],
+                        "bottom-link": []
                     },
                     {
                         "section-image": "resources/uniandes.png",
@@ -87,7 +130,8 @@ var data =
                                 "Developed a user simulation tool in Java to load RAM and CPU to a given" +
                                 " percent for a given time. The tool is 100% accurate loading RAM and" +
                                 " 95% accurate loading CPU."
-                            ]
+                            ],
+                        "bottom-link": []
                     }
                 ]
         },
@@ -103,9 +147,18 @@ var data =
                         "section-subtitle": [],
                         "text":
                             [
-                                "Led the development of an Android application where users can use their" +
-                                " smartphones as security cameras. Features include live streaming" +
-                                " to multiple devices and motion detection of an area."
+                                "Led the development of a multi-platform application where users can use their" +
+                                " smartphones and their computers as security cameras. Features include live" +
+                                " streaming to multiple devices and motion detection of an area.",
+                                "Technologies: Android, OpenCV, Angular, WebRTC, Firebase"
+                            ],
+                        "bottom-link":
+                            [
+                                {
+                                    "icon": "fa-external-link",
+                                    "icon-class": "external-link",
+                                    "link": "https://houseglance.com"
+                                }
                             ]
                     },
                     {
@@ -116,7 +169,21 @@ var data =
                             [
                                 "Designed and implemented an online chat game that can be played" +
                                 " through multiple platforms. The web application is mobile friendly" +
-                                " and cross-browser compatible."
+                                " and cross-browser compatible.",
+                                "Technologies: Angular, Express, Node, SocketIO, Mocha"
+                            ],
+                        "bottom-link":
+                            [
+                                {
+                                    "icon": "fa-github",
+                                    "icon-class": "github-link",
+                                    "link": "https://github.com/adelavegaf/mafiachatgame"
+                                },
+                                {
+                                    "icon": "fa-external-link",
+                                    "icon-class": "external-link",
+                                    "link": "https://mafiachatgame.herokuapp.com/#/play"
+                                }
                             ]
                     }
                 ]

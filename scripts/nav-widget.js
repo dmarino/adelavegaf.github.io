@@ -22,10 +22,15 @@
  * @constructor
  */
 function NavWidget(navData) {
+    "use strict";
+
     var navWidget = document.createElement("ul");
     navWidget.className = "nav nav-pills flex-column text-center";
 
     for (var i = 0; i < navData.length; i++) {
+        if (!navData[i]["anchor-name"]) {
+            continue;
+        }
         var listItem = document.createElement("li");
         listItem.className = "nav-item lead";
         navWidget.appendChild(listItem);
@@ -41,7 +46,7 @@ function NavWidget(navData) {
 
         var icon = document.createElement("i");
         icon.className = "fa " + navData[i]["icon"];
-        icon.setAttribute("aria-hidden", true);
+        icon.setAttribute("aria-hidden", "true");
         anchor.appendChild(icon);
 
         anchor.appendChild(document.createTextNode(" " + navData[i]["title"]));
