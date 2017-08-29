@@ -25,11 +25,13 @@ var data = [
                 "bottom-link": [
                     {
                         "icon": "fa-github",
+                        "icon-title": "Antonio Github profile link",
                         "icon-class": "github-link",
                         "link": "https://github.com/adelavegaf"
                     },
                     {
                         "icon": "fa-linkedin-square",
+                        "icon-title": "Antonio LinkedIn profile link",
                         "icon-class": "linkedin-link",
                         "link": "https://www.linkedin.com/in/antonio-de-la-vega"
                     }
@@ -149,6 +151,7 @@ var data = [
                 "bottom-link": [
                     {
                         "icon": "fa-external-link",
+                        "icon-title": "House Glance website link",
                         "icon-class": "external-link",
                         "link": "https://houseglance.com"
                     }
@@ -167,11 +170,13 @@ var data = [
                 "bottom-link": [
                     {
                         "icon": "fa-github",
+                        "icon-title": "Mafia Chat Game Github Link",
                         "icon-class": "github-link",
                         "link": "https://github.com/adelavegaf/mafiachatgame"
                     },
                     {
                         "icon": "fa-external-link",
+                        "icon-title": "Mafia Chat Game website link",
                         "icon-class": "external-link",
                         "link": "https://mafiachatgame.herokuapp.com/#/play"
                     }

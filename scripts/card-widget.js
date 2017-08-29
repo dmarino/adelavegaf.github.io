@@ -79,6 +79,7 @@ function CardWidget(cardData) {
 
             var icon = document.createElement("i");
             icon.className = "fa fa-2x " + element.icon;
+            icon.setAttribute("title", element["icon-title"]);
             anchor.appendChild(icon);
 
             bottomLinkSection.appendChild(anchor);
