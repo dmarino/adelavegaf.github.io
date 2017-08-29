@@ -5,7 +5,10 @@ var data = [
         "icon": "",
         "sections": [
             {
-                "section-image": "resources/profile_pic.jpg",
+                "section-image": {
+                    "src": "resources/profile_pic.jpg",
+                    "alt": "Antonio Profile Picture"
+                },
                 "section-title": "welcome",
                 "section-subtitle": [
                     "",
@@ -15,7 +18,7 @@ var data = [
                 "bottom-link": []
             },
             {
-                "section-image": "",
+                "section-image": {},
                 "section-title": "social-links",
                 "section-subtitle": [],
                 "text": [],
@@ -40,7 +43,7 @@ var data = [
         "icon": "fa-id-card",
         "sections": [
             {
-                "section-image": "",
+                "section-image": {},
                 "section-title": "personal-interests",
                 "section-subtitle": [],
                 "text": [
@@ -59,7 +62,10 @@ var data = [
         "icon": "fa-graduation-cap",
         "sections": [
             {
-                "section-image": "resources/uniandes.png",
+                "section-image": {
+                    "src": "resources/uniandes.png",
+                    "alt": "Universidad de los Andes Logo"
+                },
                 "section-title": "gpa",
                 "section-subtitle": [
                     "Majoring in Systems and Computing Engineering",
@@ -78,7 +84,10 @@ var data = [
         "icon": "fa-gavel",
         "sections": [
             {
-                "section-image": "resources/google.png",
+                "section-image": {
+                    "src": "resources/google.png",
+                    "alt": "Google Logo"
+                },
                 "section-title": "google",
                 "section-subtitle": [
                     "Software Engineer Tools and Infrastructure Intern",
@@ -94,7 +103,10 @@ var data = [
                 "bottom-link": []
             },
             {
-                "section-image": "resources/uniandes.png",
+                "section-image": {
+                    "src": "resources/uniandes.png",
+                    "alt": "Universidad de los Andes Logo"
+                },
                 "section-title": "research-assistant",
                 "section-subtitle": [
                     "Research Assistant",
@@ -125,7 +137,7 @@ var data = [
         "icon": "fa-gamepad",
         "sections": [
             {
-                "section-image": "",
+                "section-image": {},
                 "section-title": "houseglance",
                 "section-subtitle": [],
                 "text": [
@@ -143,7 +155,7 @@ var data = [
                 ]
             },
             {
-                "section-image": "",
+                "section-image": {},
                 "section-title": "mafiachatgame",
                 "section-subtitle": [],
                 "text": [

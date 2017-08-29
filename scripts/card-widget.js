@@ -39,11 +39,12 @@ function CardWidget(cardData) {
         var sectionDiv = document.createElement("div");
         sectionElement.appendChild(sectionDiv);
 
-        var imgSrc = section["section-image"];
+        var img = section["section-image"];
 
-        if (imgSrc) {
+        if (Object.keys(img).length > 0) {
             var image = document.createElement("img");
-            image.setAttribute("src", imgSrc);
+            image.setAttribute("src", img.src);
+            image.setAttribute("alt", img.alt);
             image.setAttribute("width", "128");
             image.className = "rounded mx-auto d-block";
             sectionDiv.appendChild(image);
